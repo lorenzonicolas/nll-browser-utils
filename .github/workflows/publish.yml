@@ -26,7 +26,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:Threshold=0
     - name: Generate Release
-      run: dotnet publish
+      run: dotnet publish -c Release
     - name: Pack
       run: dotnet pack
     - name: Add nuget source
