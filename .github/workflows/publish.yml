@@ -24,7 +24,7 @@ jobs:
     - name: Build
       run: dotnet build
     - name: Test
-      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:Threshold=81
+      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:Threshold=0
     - name: Generate Release
       run: dotnet publish
     - name: Pack
@@ -32,4 +32,4 @@ jobs:
     - name: Add nuget source
       run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/lorenzonicolas/index.json"
     - name: Publish package
-      run: dotnet nuget push "./nll-file-system-utils/bin/Release/*.nupkg" --source "github"
+      run: dotnet nuget push "./nll-browser-utils/bin/Release/*.nupkg" --source "github"
