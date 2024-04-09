@@ -9,7 +9,7 @@
     <Company>NLL</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>READMEPKG.md</PackageReadmeFile>
-    <PackageId>NLL.FileSystemUtils</PackageId>
+    <PackageId>NLL.BrowserUtils</PackageId>
     <Version>1.0.0</Version>
   </PropertyGroup>
 
