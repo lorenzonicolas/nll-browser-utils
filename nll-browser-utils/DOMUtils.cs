@@ -1,8 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
 
-namespace BrowserAutomation
+namespace BrowserUtils
 {
     public class DOMUtils
     {
@@ -60,7 +59,7 @@ namespace BrowserAutomation
                 .Click();
         }
 
-        public IWebElement tryFindElement(By by)
+        public IWebElement? tryFindElement(By by)
         {
             try
             {
